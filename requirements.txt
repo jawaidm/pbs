@@ -37,3 +37,5 @@ pytz==2017.2
 gunicorn==19.8.1
 humanize==0.5.1
 docutils==0.15.2
+python-decouple==3.8
+git+https://github.com/dbca-wa/appmonitor_client.git#egg=appmonitor_client

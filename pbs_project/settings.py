@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'appmonitor_client',
 
     # PBS model breakdown
     'pbs',
@@ -102,6 +103,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
     "pbs_project.context_processors.standard",
 )
+
+CRON_CLASSES = [
+    'appmonitor_client.cron.CronJobAppMonitorClient',
+]
 
 ROOT_URLCONF = 'pbs_project.urls'
 
